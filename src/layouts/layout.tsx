@@ -1,18 +1,30 @@
-import React, { ReactElement, ReactNode } from "react";
+import { ReactElement, ReactNode } from "react";
 
 interface InLayout {
-   children : ReactNode
+	children: ReactNode;
+}
+
+const randomImage = (numMin: number, numMax: number): string => {
+	return Math.floor(
+		Math.random() * (Math.floor(numMax) - Math.ceil(numMin) + 1) +
+			Math.ceil(numMin)
+	).toString();
 };
 
-const Layout = ({children}: InLayout):ReactElement => {
-   console.log(`../public/bg${Math.floor(Math.random()*(Math.floor(3) - Math.ceil(1)+1)+Math.ceil(1)).toString()}.jpg`);
-   
-   
-   return (
-      <main className={`bg-[url('../public/bg${Math.floor(Math.random()*(Math.floor(4) - Math.ceil(1)+1)+Math.ceil(1)).toString()}.jpg')]  bg-cover`}>
-         {children}
-      </main>
-   )
+const Layout = ({ children }: InLayout): ReactElement => {
+	return (
+		<main
+			style={{
+				backgroundImage: `url(/bg${randomImage(1, 3)}.jgp)`,
+			}}
+			className={` bg-cover`}
+		>
+			{children}
+		</main>
+	);
 };
 
 export default Layout;
+
+// @@@@@@@@@@@@@ code trashes @@@@@@@@@@@@
+// bg-[url(../public/bg${randomImage(1,3)}.jpg)]
