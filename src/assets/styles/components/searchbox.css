@@ -1,0 +1,50 @@
+@import "../../../index.css";
+
+/* search box  */
+.custom >span{
+   color: white !important;
+}
+.custom  > span > span > input {
+   &::-webkit-input-placeholder {
+      color: var(--color-white) !important;
+   }
+}
+.custom  > span > span  {
+   background-color: transparent !important;
+   backdrop-filter:blur(10px) !important;
+   /* outline: solid 1px var(--color-white)  !important; */
+   color: var(--color-white) !important;
+}
+
+:where(.css-dev-only-do-not-override-apn68).ant-input-outlined:focus, :where(.css-dev-only-do-not-override-apn68).ant-input-outlined:focus-within{
+   border-color: transparent;
+   outline: 0;
+   background: var(--color-white);
+   border-width: 1px;
+   border-style: solid;
+   border-color: var(--color-white);
+   box-shadow: none;
+}
+
+:where(.css-dev-only-do-not-override-apn68).ant-input-outlined:hover {
+   border-color: transparent;
+   border-width: 1px;
+   border-style: solid;
+   border-color: var(--color-white);
+   /* box-shadow: 0 0 0 2px rgba(5, 145, 255, 0.1); */
+}
+
+.custom > span>span>span>span>span>svg{
+   color: var(--color-white) !important;
+}
+
+/* search button  */
+
+:where(.css-dev-only-do-not-override-apn68).ant-input-search >.ant-input-group >.ant-input-group-addon:last-child .ant-input-search-button:not(.ant-btn-primary):hover {
+   color: var(--color-gray);
+}
+
+:where(.css-dev-only-do-not-override-apn68).ant-btn-variant-outlined:not(:disabled):not(.ant-btn-disabled):hover, :where(.css-dev-only-do-not-override-apn68).ant-btn-variant-dashed:not(:disabled):not(.ant-btn-disabled):hover {
+   border-color: var(--color-gray);
+   /* background: #ffffff; */
+}

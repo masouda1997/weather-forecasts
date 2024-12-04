@@ -13,7 +13,7 @@ const Layout = ({ children }: InLayout): ReactElement => {
 			style={{
 				backgroundImage: `url(/bg${backgroundPicker(1, 3)}.jpg)`,
 			}}
-			className={` bg-cover`}
+			className={` bg-cover h-screen`}
 		>
 			{children}
 		</main>
