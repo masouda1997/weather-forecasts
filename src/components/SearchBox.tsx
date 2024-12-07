@@ -21,9 +21,9 @@ const SearchBox:React.FC = () => {
    const onSearch:SearchProps['onSearch']= (value, _e, info) => console.log(info?.source, value);
 
    return (
-      <section className='w-full flex justify-center items-center py-10 '>
+      <section className='w-full flex justify-center items-center py-10'>
          {/* class custom related to pure css styles for customize the ant-design components which imported in top  */}
-         <Search className='w-1/4 custom' style={{backgroundColor:""}} placeholder='city'  allowClear onSearch={onSearch} />
+         <Search className='w-1/4 custom' placeholder='city'  allowClear onSearch={onSearch} />
       </section>
    )
 }

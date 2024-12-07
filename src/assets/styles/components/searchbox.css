@@ -17,7 +17,7 @@
 }
 
 :where(.css-dev-only-do-not-override-apn68).ant-input-outlined:focus, :where(.css-dev-only-do-not-override-apn68).ant-input-outlined:focus-within{
-   border-color: transparent;
+   border-color: #b22222;
    outline: 0;
    background: var(--color-white);
    border-width: 1px;
