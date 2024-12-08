@@ -4,7 +4,7 @@
 .container {
    display: grid;
    grid-template-areas: 
-      "generalInfo generalInfo wdf wdf wdf wdf"
+      "generalInfo generalInfo fiveDayFactors fiveDayFactors fiveDayFactors fiveDayFactors"
       "generalInfo generalInfo wdf wdf wdf wdf"
       "mo mo mo map map map"
       "mo mo mo map map map"      
@@ -16,7 +16,7 @@
    padding-bottom: 2rem;
 }
 
-.generalInfo ,.wdf ,.mo, .map {
+.generalInfo ,.wdf ,.mo, .fiveDayFactors ,.map {
    overflow: hidden;
    background-color: #00000033;
    backdrop-filter: blur(15px);
@@ -31,6 +31,9 @@
 
 .wdf{
    grid-area: wdf;
+}
+.fiveDayFactors{
+   grid-area: fiveDayFactors;
 }
 
 .mo{

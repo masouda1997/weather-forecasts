@@ -40,7 +40,7 @@ function App() {
 						<div className="flex justify-between items-center ">
 							<figure>
 								<img src={fogIcon} alt="" />
-								<figcaption>Clear Sky</figcaption>
+								<figcaption className="capitalize text-sm">foggy weather</figcaption>
 							</figure>
 							<span className="self-end flex gap-4">
 								<span className="inline-flex justify-center items-center"> 
@@ -54,6 +54,7 @@ function App() {
 							</span>
 						</div>
 					</section>
+					<section className={`${main.fiveDayFactors} `}>2w</section>
 					<section className={`${main.wdf} `}>2</section>
 					<section className={`${main.mo} `}>3</section>
 					<section className={`${main.map} `}>4</section>
