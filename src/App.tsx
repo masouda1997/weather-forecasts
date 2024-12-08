@@ -54,7 +54,15 @@ function App() {
 							</span>
 						</div>
 					</section>
-					<section className={`${main.fiveDayFactors} `}>2w</section>
+					<section className={`${main.fiveDayFactors} flex justify-start items-center `}>
+						<div className=" flex flex-col items-center gap-2 justify-between h-full">
+							<p>00:00</p>
+							<figure>
+								<img src="" alt=" " />
+							</figure>
+							<p>11 &deg; <span className="uppercase">c</span> </p>
+						</div>
+					</section>
 					<section className={`${main.wdf} `}>2</section>
 					<section className={`${main.mo} `}>3</section>
 					<section className={`${main.map} `}>4</section>
