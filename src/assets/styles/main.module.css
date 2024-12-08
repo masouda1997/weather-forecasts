@@ -4,27 +4,29 @@
 .container {
    display: grid;
    grid-template-areas: 
-      "ti ti wdf wdf wdf wdf"
-      "ti ti wdf wdf wdf wdf"
+      "generalInfo generalInfo wdf wdf wdf wdf"
+      "generalInfo generalInfo wdf wdf wdf wdf"
       "mo mo mo map map map"
       "mo mo mo map map map"      
    ;
    grid-template-rows: repeat(4 , 1fr);
    grid-template-columns: repeat(6, 1fr);
    gap: 1rem;
-   padding: 2rem;
+   padding-inline: 2rem;
+   padding-bottom: 2rem;
 }
 
-.ti ,.wdf ,.mo, .map {
+.generalInfo ,.wdf ,.mo, .map {
    overflow: hidden;
-   background-color: transparent;
+   background-color: #00000033;
    backdrop-filter: blur(15px);
    border: 1px solid white;
-   border-radius: 50px;
+   border-radius: 15px;
+   padding: .5rem;
 }
 
-.ti{
-   grid-area:ti ;
+.generalInfo{
+   grid-area:generalInfo ;
 }
 
 .wdf{
