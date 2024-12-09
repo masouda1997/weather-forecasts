@@ -1,6 +1,14 @@
 @import '../../../index.css';
 
-:where(.css-dev-only-do-not-override-apn68).ant-switch{
-   /* background: red !important; */
+:where(.css-dev-only-do-not-override-apn68).ant-switch .ant-switch-inner{
+   border: 1px solid var(--color-white);
 }
 
+:where(.css-dev-only-do-not-override-apn68).ant-switch{
+   background: transparent !important;
+}
+
+
+:where(.css-dev-only-do-not-override-apn68).ant-switch.ant-switch-checked {
+   background: var(--shadow-gray) !important;
+}

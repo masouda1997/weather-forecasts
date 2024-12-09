@@ -6,7 +6,9 @@
 
 :root{
    --color-white : #e5e5e5;
-   --color-gray-: #8C8C8C;
+   --color-gray: #8C8C8C;
+   --color-darkgray: #656565;
+   --shadow-gray:#8c8c8c80;
    /* set all fonts to white  in here s */
    color: var(--color-white);
 }
