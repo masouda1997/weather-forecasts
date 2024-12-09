@@ -1,4 +1,5 @@
 import "./index.css";
+import "./assets/styles/components/toggleButton.css"
 import Layout from "./layouts/layout";
 import SearchBox from "./components/SearchBox";
 import main from "./assets/styles/main.module.css";
@@ -10,6 +11,8 @@ import { AiOutlineRise } from "react-icons/ai";
 
 
 import fogIcon from './assets/images/fogIcon.svg'
+import cloudIcon from './assets/images/cloudyIcon.svg'
+import { Switch } from "antd";
 
 function App() {
 	return (
@@ -54,17 +57,138 @@ function App() {
 							</span>
 						</div>
 					</section>
-					<section className={`${main.fiveDayFactors} flex justify-start items-center `}>
-						<div className=" flex flex-col items-center gap-2 justify-between h-full">
-							<p>00:00</p>
-							<figure>
-								<img src="" alt=" " />
-							</figure>
-							<p>11 &deg; <span className="uppercase">c</span> </p>
-						</div>
+
+
+					<section className={`${main.fiveDayFactors} flex flex-col justify-between `}>
+						<h2 className="basis-1/5 capitalize font-semibold text-sm ">today's forecasts </h2>
+						<section className="flex justify-start items-center basis-4/5">
+							<div className=" flex flex-col items-center gap-2 justify-between h-full px-4 py-1">
+								<p>00:00</p>
+								<figure>
+									<img src={cloudIcon} alt=" " />
+								</figure>
+								<p className="text-sm">11 &deg; <span className="uppercase">c</span> </p>
+							</div>
+							<div className=" flex flex-col items-center gap-2 justify-between h-full px-4 py-1">
+								<p>00:00</p>
+								<figure>
+									<img src={cloudIcon} alt=" " />
+								</figure>
+								<p className="text-sm">11 &deg; <span className="uppercase">c</span> </p>
+							</div>
+							<div className=" flex flex-col items-center gap-2 justify-between h-full px-4 py-1">
+								<p>00:00</p>
+								<figure>
+									<img src={cloudIcon} alt=" " />
+								</figure>
+								<p className="text-sm" >11 &deg; <span className="uppercase">c</span> </p>
+							</div>
+							<div className=" flex flex-col items-center gap-2 justify-between h-full px-4 py-1">
+								<p>00:00</p>
+								<figure>
+									<img src={cloudIcon} alt=" " />
+								</figure>
+								<p className="text-sm">11 &deg; <span className="uppercase">c</span> </p>
+							</div>
+							
+						</section>
 					</section>
-					<section className={`${main.wdf} `}>2</section>
+
+
+					<section className={`${main.wdf} flex flex-col justify-between `}>
+						<div className="basis-1/5 flex justify-between items-center">
+
+							<h2 className="basis-1/5 self-start capitalize font-semibold text-sm ">weakly forecasts </h2>
+
+							<Switch className="customBtn" checkedChildren="14 day" unCheckedChildren="7 day" />
+
+						</div>
+
+						<section className="flex justify-between items-center basis-4/5" >
+							<div className=" flex flex-col  items-center gap-2 justify-between h-full px-4 py-1">
+								<p className="text-sm capitalize">saturday</p>
+								<figure>
+									<img src={cloudIcon} alt=" " />
+								</figure>
+								<p className="text-sm">
+									<span className="uppercase font-semibold">16</span> 
+									/
+									<span className="uppercase">12</span> 
+								</p>
+							</div>
+							<div className=" flex flex-col  items-center gap-2 justify-between h-full px-4 py-1">
+								<p className="text-sm capitalize">sunday</p>
+								<figure>
+									<img src={cloudIcon} alt=" " />
+								</figure>
+								<p className="text-sm">
+									<span className="uppercase font-semibold">16</span> 
+									/
+									<span className="uppercase">12</span> 
+								</p>
+							</div>
+							<div className=" flex flex-col  items-center gap-2 justify-between h-full px-4 py-1">
+								<p className="text-sm capitalize">monday</p>
+								<figure>
+									<img src={cloudIcon} alt=" " />
+								</figure>
+								<p className="text-sm">
+									<span className="uppercase font-semibold">16</span> 
+									/
+									<span className="uppercase">12</span> 
+								</p>
+							</div>
+							<div className=" flex flex-col  items-center gap-2 justify-between h-full px-4 py-1">
+								<p className="text-sm capitalize">tuesday</p>
+								<figure>
+									<img src={cloudIcon} alt=" " />
+								</figure>
+								<p className="text-sm">
+									<span className="uppercase font-semibold">16</span> 
+									/
+									<span className="uppercase">12</span> 
+								</p>
+							</div>
+							<div className=" flex flex-col  items-center gap-2 justify-between h-full px-4 py-1">
+								<p className="text-sm capitalize">wednesday</p>
+								<figure>
+									<img src={cloudIcon} alt=" " />
+								</figure>
+								<p className="text-sm">
+									<span className="uppercase font-semibold">16</span> 
+									/
+									<span className="uppercase">12</span> 
+								</p>
+							</div>
+							<div className=" flex flex-col  items-center gap-2 justify-between h-full px-4 py-1">
+								<p className="text-sm capitalize">thursday</p>
+								<figure>
+									<img src={cloudIcon} alt=" " />
+								</figure>
+								<p className="text-sm">
+									<span className="uppercase font-semibold">16</span> 
+									/
+									<span className="uppercase">12</span> 
+								</p>
+							</div>
+							<div className=" flex flex-col  items-center gap-2 justify-between h-full px-4 py-1">
+								<p className="text-sm capitalize">friday</p>
+								<figure>
+									<img src={cloudIcon} alt=" " />
+								</figure>
+								<p className="text-sm">
+									<span className="uppercase font-semibold">16</span> 
+									/
+									<span className="uppercase">12</span> 
+								</p>
+							</div>
+						</section>
+					</section>
+
+
 					<section className={`${main.mo} `}>3</section>
+
+
 					<section className={`${main.map} `}>4</section>
 				</section>
 			</main>
