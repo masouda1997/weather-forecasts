@@ -13,6 +13,11 @@ import fogIcon from './assets/images/fogIcon.svg'
 import cloudIcon from './assets/images/cloudyIcon.svg'
 import { ConfigProvider, Switch } from "antd";
 
+import { PiWindDuotone ,PiSunDim ,PiSunHorizonDuotone ,PiDrop , PiGauge ,PiUsersThreeDuotone   } from "react-icons/pi";
+import { GiOrbitalRays } from "react-icons/gi";
+
+
+
 function App() {
 	return (
 		<Layout>
@@ -224,12 +229,51 @@ function App() {
 						</section>
 					</section>
 
-					<section className={`${main.UIIndex} `}>3</section>
-					<section className={`${main.pressure} `}>3</section>
-					<section className={`${main.humidity} `}>3</section>
-					<section className={`${main.windDirection} `}>3</section>
-					<section className={`${main.airPollution} `}>3</section>
-					<section className={`${main.populationSunset} `}>3</section>
+					<section className={`${main.humidity} `}>
+						<h2 className="flex items-center gap-2 text-sm font-semibold capitalize">
+							wind
+							<PiWindDuotone/>
+						</h2>
+					</section>
+
+
+					<section className={`${main.pressure} `}>
+						<h2 className="flex items-center gap-2 text-sm font-semibold capitalize">
+							pressure
+							<PiGauge/>
+						</h2>
+					</section>
+
+
+					<section className={`${main.UVIndex} `}>
+						<h2 className="flex items-center gap-2 text-sm font-semibold capitalize">
+							UV index
+							<GiOrbitalRays />
+						</h2>
+					</section>
+
+
+					<section className={`${main.windDirection} `}>
+						<h2 className="flex items-center gap-2 text-sm font-semibold capitalize">
+							humidity
+							<PiDrop />
+						</h2>
+					</section>
+
+
+					<section className={`${main.sunset} `}>
+						<h2 className="flex items-center gap-2 text-sm font-semibold capitalize">
+							sunset
+							<PiSunHorizonDuotone />
+						</h2>
+					</section>
+
+					<section className={`${main.airPollutionPopulation} `}>
+						<h2 className="flex items-center gap-2 text-sm font-semibold capitalize">
+							population & air pollution
+							<PiUsersThreeDuotone />
+						</h2>
+					</section>
 
 					<section className={`${main.map} `}>4</section>
 				</section>

@@ -6,17 +6,15 @@
    grid-template-areas: 
       "generalInfo generalInfo todayForecast todayForecast todayForecast todayForecast"
       "generalInfo generalInfo weaklyForecast weaklyForecast weaklyForecast weaklyForecast"
-      "UIIndex pressure humidity map map map"
-      "windDirection airPollution populationSunset map map map"      
+      "humidity pressure UVIndex map map map"
+      "windDirection  sunset airPollutionPopulation map map map"      
    ;
    grid-template-rows: repeat(4 , 1fr);
    grid-template-columns: repeat(6, 1fr);
    gap: 1rem;
-   padding-inline: 2rem;
-   padding-bottom: 2rem;
+   padding: 0 7rem 3rem 7rem;
 }
-
-.generalInfo ,.weaklyForecast ,.UIIndex , .todayForecast ,.map ,.pressure , .humidity ,.windDirection ,.airPollution , .populationSunset {
+.generalInfo ,.weaklyForecast ,.UVIndex , .todayForecast ,.map ,.pressure , .humidity ,.windDirection ,.airPollutionPopulation , .sunset {
    overflow: hidden;
    background-color: #00000033;
    backdrop-filter: blur(15px);
@@ -36,8 +34,8 @@
    grid-area: todayForecast;
 }
 
-.UIIndex{
-   grid-area: UIIndex ;
+.UVIndex{
+   grid-area: UVIndex ;
 }
 
 .pressure{
@@ -51,12 +49,12 @@
    grid-area: windDirection ;
 }
 
-.airPollution{
-   grid-area: airPollution ;
+.airPollutionPopulation{
+   grid-area: airPollutionPopulation ;
 }
 
-.populationSunset{
-   grid-area: populationSunset;
+.sunset{
+   grid-area: sunset;
 }
 
 .map{
