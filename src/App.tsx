@@ -21,10 +21,10 @@ import { GiOrbitalRays } from "react-icons/gi";
 function App() {
 	return (
 		<Layout>
-			{/* <Counter/> */}
 			<main className="flex justify-between items-center flex-col h-screen">
 				<SearchBox />
 				<section className={`${main.container} w-full  h-[90%]`}>
+					{/* general info */}
 					<section
 						className={`${main.generalInfo} flex flex-col justify-between `}
 					>
@@ -63,7 +63,7 @@ function App() {
 							</span>
 						</div>
 					</section>
-
+					{/* today forecasts } */}
 					<section
 						className={`${main.todayForecast} flex flex-col justify-between `}
 					>
@@ -113,7 +113,7 @@ function App() {
 							</div>
 						</section>
 					</section>
-
+					{/* weakly forecasts */}
 					<section
 						className={`${main.weaklyForecast} flex flex-col justify-between `}
 					>
@@ -228,53 +228,49 @@ function App() {
 							</div>
 						</section>
 					</section>
-
+					{/* humidity */}
 					<section className={`${main.humidity} `}>
 						<h2 className="flex items-center gap-2 text-sm font-semibold capitalize">
 							wind
 							<PiWindDuotone/>
 						</h2>
 					</section>
-
-
+					{/* pressure */}
 					<section className={`${main.pressure} `}>
 						<h2 className="flex items-center gap-2 text-sm font-semibold capitalize">
 							pressure
 							<PiGauge/>
 						</h2>
 					</section>
-
-
+					{/* UV index  */}
 					<section className={`${main.UVIndex} `}>
 						<h2 className="flex items-center gap-2 text-sm font-semibold capitalize">
 							UV index
 							<GiOrbitalRays />
 						</h2>
 					</section>
-
-
+					{/* wind direction  */}
 					<section className={`${main.windDirection} `}>
 						<h2 className="flex items-center gap-2 text-sm font-semibold capitalize">
 							humidity
 							<PiDrop />
 						</h2>
 					</section>
-
-
+					{/* sun set  */}
 					<section className={`${main.sunset} `}>
 						<h2 className="flex items-center gap-2 text-sm font-semibold capitalize">
 							sunset
 							<PiSunHorizonDuotone />
 						</h2>
 					</section>
-
+					{/* air pollution and population  */}
 					<section className={`${main.airPollutionPopulation} `}>
 						<h2 className="flex items-center gap-2 text-sm font-semibold capitalize">
 							population & air pollution
 							<PiUsersThreeDuotone />
 						</h2>
 					</section>
-
+					{/* map */}
 					<section className={`${main.map} `}>4</section>
 				</section>
 			</main>
