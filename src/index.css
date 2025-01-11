@@ -2,8 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
+/* 
+html{
+   filter: invert();
+} */
 :root{
    --color-white : #e5e5e5;
    --color-gray: #8C8C8C;

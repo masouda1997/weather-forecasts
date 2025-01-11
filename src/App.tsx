@@ -3,17 +3,15 @@ import Layout from "./layouts/layout";
 import SearchBox from "./components/SearchBox";
 import main from "./assets/styles/main.module.css";
 
-import { BsBuildings } from "react-icons/bs";
 import { BsBuildingsFill } from "react-icons/bs";
 import { AiOutlineFall } from "react-icons/ai";
 import { AiOutlineRise } from "react-icons/ai";
-
 
 import fogIcon from './assets/images/fogIcon.svg'
 import cloudIcon from './assets/images/cloudyIcon.svg'
 import { ConfigProvider, Switch } from "antd";
 
-import { PiWindDuotone ,PiSunDim ,PiSunHorizonDuotone ,PiDrop , PiGauge ,PiUsersThreeDuotone   } from "react-icons/pi";
+import { PiWindDuotone ,PiSunHorizonDuotone ,PiDrop , PiGauge ,PiUsersThreeDuotone   } from "react-icons/pi";
 import { GiOrbitalRays } from "react-icons/gi";
 
 
